@@ -13,6 +13,15 @@
     </extensions>
 
     <applicationListeners>
-        <listener class="org.jetbrains.plugins.template.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
+        <listener class="org.jetbrains.plugins.template.listeners.MyApplicationActivationListener"
+                  topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+
+    <actions>
+        <action class="org.jetbrains.plugins.template.actions.ProjectBuildAction"
+                id="org.jetbrains.plugins.template.actions.ProjectBuildAction" text="Hwen: Build Project"/>
+        <action class="org.jetbrains.plugins.template.actions.ProjectRebuildAllModulesAction"
+                id="org.jetbrains.plugins.template.actions.ProjectRebuildAllModulesAction"
+                text="Hwen: Rebuild All Project Modules"/>
+    </actions>
 </idea-plugin>
